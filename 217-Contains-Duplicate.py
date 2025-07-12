@@ -1,10 +1,10 @@
 def containsDuplicate(nums: list[int]) -> bool:
-    elements: dict[int, int] = {}
-    for x in range(0, len(nums)):
-        if nums[x] in elements.values():
+    elements: dict[int, bool] = {}
+    for num in nums:
+        if num in elements:
             return True
         else:
-            elements[x] = nums[x]
+            elements[num] = True
     return False
     # Alternative solution using set
     # return len(nums) != len(set(nums))
