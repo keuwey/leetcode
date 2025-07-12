@@ -1,0 +1,13 @@
+[project]
+name = "leetcode"
+authors = [{ name = "Kevin Halley", email = "keuwey@gmail.com" }]
+version = "0.1.0"
+description = "Folder containing solutions to LeetCode problems"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "numba>=0.61.2",
+]
+
+[dependency-groups]
+dev = ["mypy>=1.16.1", "pyright>=1.1.402", "ruff>=0.12.1"]
